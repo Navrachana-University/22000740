@@ -1,0 +1,33 @@
+greet:
+print "Greetings!"
+ret
+getValue:
+ret 42
+ret
+main:
+t0 = call greet
+t1 = call getValue
+answer = t1
+t2 = answer
+print t2
+check = 1
+t3 = check == 1
+if t3 goto L0
+goto L1
+L0:
+print "Check passed!"
+L1:
+counter = 0
+L2:
+t4 = counter < 5
+if t4 goto L3
+goto L4
+L3:
+print "This is message number "
+t5 = counter
+print t5
+t6 = counter + 1
+counter = t6
+goto L2
+L4:
+ret
